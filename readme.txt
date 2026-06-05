@@ -2,7 +2,7 @@ This dataset of discgolf discs was created by scrapping the website trydiscs.com
 
 The dataset is has been updated as of 6/5/26 and contains most discs available on the market.  
 **THIS IS NOT A COMPLETE DATASET OF ALL DISCGOLF DISCS**
-PDGA has 2382 discs approved to sanctioned play
+PDGA has 2382 discs approved for sanctioned play
 This dataset contains 2110 discs
 
 Dataset configuration:
