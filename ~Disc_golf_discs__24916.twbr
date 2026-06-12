@@ -1,0 +1,3122 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='disc_catalog' inline='true' name='federated.1wtj8pb0hskram1g1e6m7052jr7w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='disc_catalog' name='textscan.0y474uo0bkugkz1bu1vxm0vdlbbj'>
+            <connection class='textscan' directory='C:/Users/tcutt/OneDrive/Desktop/data projects/disc_golf/disc_types/disc_golf_discs' filename='disc_catalog.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='manufacturer_fingerprint_profiles' name='textscan.0uy3eyx011pc2f1e88sac0k0mswr'>
+            <connection class='textscan' directory='C:/Users/tcutt/OneDrive/Desktop/data projects/disc_golf/disc_types/disc_golf_discs' filename='manufacturer_fingerprint_profiles.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0y474uo0bkugkz1bu1vxm0vdlbbj' name='disc_catalog.csv' table='[disc_catalog#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='manufacturer' ordinal='0' />
+            <column datatype='string' name='disc_name' ordinal='1' />
+            <column datatype='real' name='speed' ordinal='2' />
+            <column datatype='real' name='glide' ordinal='3' />
+            <column datatype='real' name='turn' ordinal='4' />
+            <column datatype='real' name='fade' ordinal='5' />
+            <column datatype='string' name='stability' ordinal='6' />
+            <column datatype='string' name='disc_type' ordinal='7' />
+            <column datatype='boolean' name='discontinued' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[disc_catalog.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>manufacturer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[manufacturer]</local-name>
+            <parent-name>[disc_catalog.csv]</parent-name>
+            <remote-alias>manufacturer</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>disc_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[disc_name]</local-name>
+            <parent-name>[disc_catalog.csv]</parent-name>
+            <remote-alias>disc_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>speed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[speed]</local-name>
+            <parent-name>[disc_catalog.csv]</parent-name>
+            <remote-alias>speed</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>glide</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[glide]</local-name>
+            <parent-name>[disc_catalog.csv]</parent-name>
+            <remote-alias>glide</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>turn</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[turn]</local-name>
+            <parent-name>[disc_catalog.csv]</parent-name>
+            <remote-alias>turn</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fade</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fade]</local-name>
+            <parent-name>[disc_catalog.csv]</parent-name>
+            <remote-alias>fade</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stability</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stability]</local-name>
+            <parent-name>[disc_catalog.csv]</parent-name>
+            <remote-alias>stability</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>disc_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[disc_type]</local-name>
+            <parent-name>[disc_catalog.csv]</parent-name>
+            <remote-alias>disc_type</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discontinued</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[discontinued]</local-name>
+            <parent-name>[disc_catalog.csv]</parent-name>
+            <remote-alias>discontinued</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='disc_catalog.csv' datatype='table' name='[__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]' role='measure' type='quantitative' />
+      <column caption='Disc Name' datatype='string' name='[disc_name]' role='dimension' type='nominal' />
+      <column caption='Disc Type' datatype='string' name='[disc_type]' role='dimension' type='nominal' />
+      <column caption='Discontinued' datatype='boolean' name='[discontinued]' role='dimension' type='nominal' />
+      <column caption='Fade' datatype='real' name='[fade]' role='measure' type='quantitative' />
+      <column caption='Glide' datatype='real' name='[glide]' role='measure' type='quantitative' />
+      <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+      <column caption='Speed' datatype='real' name='[speed]' role='measure' type='quantitative' />
+      <column caption='Stability' datatype='string' name='[stability]' role='dimension' type='nominal' />
+      <column caption='Turn' datatype='real' name='[turn]' role='measure' type='quantitative' />
+      <column-instance column='[disc_type]' derivation='Attribute' name='[attr:disc_type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[stability]' derivation='Max' name='[max:stability:nk]' pivot='key' type='nominal' />
+      <column-instance column='[disc_type]' derivation='None' name='[none:disc_type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[stability]' derivation='None' name='[none:stability:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/tcutt/AppData/Local/Temp/TableauTemp/#TableauTemp_0ju9omx1wugmvz1epjdbr1itughy.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/12/2026 09:50:06 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>manufacturer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[manufacturer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>manufacturer</remote-alias>
+              <ordinal>0</ordinal>
+              <family>disc_catalog.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>191</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>disc_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[disc_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>disc_name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>disc_catalog.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2110</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>speed</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[speed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>speed</remote-alias>
+              <ordinal>2</ordinal>
+              <family>disc_catalog.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>glide</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[glide]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>glide</remote-alias>
+              <ordinal>3</ordinal>
+              <family>disc_catalog.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>turn</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[turn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>turn</remote-alias>
+              <ordinal>4</ordinal>
+              <family>disc_catalog.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fade</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[fade]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fade</remote-alias>
+              <ordinal>5</ordinal>
+              <family>disc_catalog.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stability</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stability]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stability</remote-alias>
+              <ordinal>6</ordinal>
+              <family>disc_catalog.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>disc_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[disc_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>disc_type</remote-alias>
+              <ordinal>7</ordinal>
+              <family>disc_catalog.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>discontinued</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[discontinued]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>discontinued</remote-alias>
+              <ordinal>8</ordinal>
+              <family>disc_catalog.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='3000' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:stability:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;neutral&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;unknown&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;overstable&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;understable&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:disc_type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;distance driver&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;unknown&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;putt and approach&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;mid_range&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;fairway driver&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[max:stability:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;neutral&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;unknown&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;overstable&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;understable&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:disc_type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;distance driver&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;unknown&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;putt and approach&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;mid_range&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;fairway driver&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='disc_catalog.csv' id='disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54'>
+            <properties context=''>
+              <relation connection='textscan.0y474uo0bkugkz1bu1vxm0vdlbbj' name='disc_catalog.csv' table='[disc_catalog#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='manufacturer' ordinal='0' />
+                  <column datatype='string' name='disc_name' ordinal='1' />
+                  <column datatype='real' name='speed' ordinal='2' />
+                  <column datatype='real' name='glide' ordinal='3' />
+                  <column datatype='real' name='turn' ordinal='4' />
+                  <column datatype='real' name='fade' ordinal='5' />
+                  <column datatype='string' name='stability' ordinal='6' />
+                  <column datatype='string' name='disc_type' ordinal='7' />
+                  <column datatype='boolean' name='discontinued' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='manufacturer_fingerprint_profiles' inline='true' name='federated.1lndodq1hbwwhy1d0o0g8043giya' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='manufacturer_fingerprint_profiles' name='textscan.172fgzw1d40khs1b2vuzc1fbvscd'>
+            <connection class='textscan' directory='C:/Users/tcutt/OneDrive/Desktop/data projects/disc_golf/disc_types/disc_golf_discs' filename='manufacturer_fingerprint_profiles.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.172fgzw1d40khs1b2vuzc1fbvscd' name='manufacturer_fingerprint_profiles.csv' table='[manufacturer_fingerprint_profiles#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='manufacturer' ordinal='0' />
+            <column datatype='integer' name='total_molds' ordinal='1' />
+            <column datatype='real' name='neutral_pct' ordinal='2' />
+            <column datatype='real' name='overstable_pct' ordinal='3' />
+            <column datatype='real' name='understable_pct' ordinal='4' />
+            <column datatype='real' name='unknown_pct' ordinal='5' />
+            <column datatype='real' name='distance driver_pct' ordinal='6' />
+            <column datatype='real' name='fairway driver_pct' ordinal='7' />
+            <column datatype='real' name='mid_range_pct' ordinal='8' />
+            <column datatype='real' name='putt and approach_pct' ordinal='9' />
+            <column datatype='real' name='unknown_pct 1' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[manufacturer_fingerprint_profiles.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>manufacturer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[manufacturer]</local-name>
+            <parent-name>[manufacturer_fingerprint_profiles.csv]</parent-name>
+            <remote-alias>manufacturer</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_molds</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_molds]</local-name>
+            <parent-name>[manufacturer_fingerprint_profiles.csv]</parent-name>
+            <remote-alias>total_molds</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neutral_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[neutral_pct]</local-name>
+            <parent-name>[manufacturer_fingerprint_profiles.csv]</parent-name>
+            <remote-alias>neutral_pct</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>overstable_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[overstable_pct]</local-name>
+            <parent-name>[manufacturer_fingerprint_profiles.csv]</parent-name>
+            <remote-alias>overstable_pct</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>understable_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[understable_pct]</local-name>
+            <parent-name>[manufacturer_fingerprint_profiles.csv]</parent-name>
+            <remote-alias>understable_pct</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unknown_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unknown_pct]</local-name>
+            <parent-name>[manufacturer_fingerprint_profiles.csv]</parent-name>
+            <remote-alias>unknown_pct</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance driver_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[distance driver_pct]</local-name>
+            <parent-name>[manufacturer_fingerprint_profiles.csv]</parent-name>
+            <remote-alias>distance driver_pct</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fairway driver_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fairway driver_pct]</local-name>
+            <parent-name>[manufacturer_fingerprint_profiles.csv]</parent-name>
+            <remote-alias>fairway driver_pct</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mid_range_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mid_range_pct]</local-name>
+            <parent-name>[manufacturer_fingerprint_profiles.csv]</parent-name>
+            <remote-alias>mid_range_pct</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>putt and approach_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[putt and approach_pct]</local-name>
+            <parent-name>[manufacturer_fingerprint_profiles.csv]</parent-name>
+            <remote-alias>putt and approach_pct</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unknown_pct 1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unknown_pct 1]</local-name>
+            <parent-name>[manufacturer_fingerprint_profiles.csv]</parent-name>
+            <remote-alias>unknown_pct 1</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='manufacturer_fingerprint_profiles.csv' datatype='table' name='[__tableau_internal_object_id__].[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]' role='measure' type='quantitative' />
+      <column caption='Distance Driver Pct' datatype='real' name='[distance driver_pct]' role='measure' type='quantitative' />
+      <column caption='Fairway Driver Pct' datatype='real' name='[fairway driver_pct]' role='measure' type='quantitative' />
+      <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+      <column caption='Mid Range Pct' datatype='real' name='[mid_range_pct]' role='measure' type='quantitative' />
+      <column caption='Neutral Pct' datatype='real' name='[neutral_pct]' role='measure' type='quantitative' />
+      <column caption='Overstable Pct' datatype='real' name='[overstable_pct]' role='measure' type='quantitative' />
+      <column caption='Putt And Approach Pct' datatype='real' name='[putt and approach_pct]' role='measure' type='quantitative' />
+      <column caption='Total Molds' datatype='integer' name='[total_molds]' role='measure' type='quantitative' />
+      <column caption='Understable Pct' datatype='real' name='[understable_pct]' role='measure' type='quantitative' />
+      <column caption='Unknown Pct 1' datatype='real' name='[unknown_pct 1]' role='measure' type='quantitative' />
+      <column caption='Unknown Pct' datatype='real' name='[unknown_pct]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/tcutt/AppData/Local/Temp/TableauTemp/#TableauTemp_0871akt0x0qvc719ikfbd01p8o0e.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/12/2026 09:50:37 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>manufacturer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[manufacturer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>manufacturer</remote-alias>
+              <ordinal>0</ordinal>
+              <family>manufacturer_fingerprint_profiles.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>200</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_molds</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_molds]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_molds</remote-alias>
+              <ordinal>1</ordinal>
+              <family>manufacturer_fingerprint_profiles.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>neutral_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[neutral_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>neutral_pct</remote-alias>
+              <ordinal>2</ordinal>
+              <family>manufacturer_fingerprint_profiles.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>overstable_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[overstable_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>overstable_pct</remote-alias>
+              <ordinal>3</ordinal>
+              <family>manufacturer_fingerprint_profiles.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>58</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>understable_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[understable_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>understable_pct</remote-alias>
+              <ordinal>4</ordinal>
+              <family>manufacturer_fingerprint_profiles.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>unknown_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[unknown_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>unknown_pct</remote-alias>
+              <ordinal>5</ordinal>
+              <family>manufacturer_fingerprint_profiles.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distance driver_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[distance driver_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>distance driver_pct</remote-alias>
+              <ordinal>6</ordinal>
+              <family>manufacturer_fingerprint_profiles.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fairway driver_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[fairway driver_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fairway driver_pct</remote-alias>
+              <ordinal>7</ordinal>
+              <family>manufacturer_fingerprint_profiles.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mid_range_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[mid_range_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mid_range_pct</remote-alias>
+              <ordinal>8</ordinal>
+              <family>manufacturer_fingerprint_profiles.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>putt and approach_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[putt and approach_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>putt and approach_pct</remote-alias>
+              <ordinal>9</ordinal>
+              <family>manufacturer_fingerprint_profiles.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>unknown_pct 1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[unknown_pct 1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>unknown_pct 1</remote-alias>
+              <ordinal>10</ordinal>
+              <family>manufacturer_fingerprint_profiles.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='manufacturer_fingerprint_profiles.csv' id='manufacturer_fingerprint_profiles.csv_3F6C7859A7D041A7879DE1B7C6920BA2'>
+            <properties context=''>
+              <relation connection='textscan.172fgzw1d40khs1b2vuzc1fbvscd' name='manufacturer_fingerprint_profiles.csv' table='[manufacturer_fingerprint_profiles#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='manufacturer' ordinal='0' />
+                  <column datatype='integer' name='total_molds' ordinal='1' />
+                  <column datatype='real' name='neutral_pct' ordinal='2' />
+                  <column datatype='real' name='overstable_pct' ordinal='3' />
+                  <column datatype='real' name='understable_pct' ordinal='4' />
+                  <column datatype='real' name='unknown_pct' ordinal='5' />
+                  <column datatype='real' name='distance driver_pct' ordinal='6' />
+                  <column datatype='real' name='fairway driver_pct' ordinal='7' />
+                  <column datatype='real' name='mid_range_pct' ordinal='8' />
+                  <column datatype='real' name='putt and approach_pct' ordinal='9' />
+                  <column datatype='real' name='unknown_pct 1' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 15 Manufacturers with Stability counts</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disc_catalog' name='federated.1wtj8pb0hskram1g1e6m7052jr7w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wtj8pb0hskram1g1e6m7052jr7w'>
+            <column-instance column='[__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' pivot='key' type='quantitative' />
+            <column caption='disc_catalog.csv' datatype='table' name='[__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]' role='measure' type='quantitative' />
+            <column caption='Discontinued' datatype='boolean' name='[discontinued]' role='dimension' type='nominal' />
+            <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+            <column-instance column='[discontinued]' derivation='None' name='[none:discontinued:nk]' pivot='key' type='nominal' />
+            <column-instance column='[manufacturer]' derivation='None' name='[none:manufacturer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[stability]' derivation='None' name='[none:stability:nk]' pivot='key' type='nominal' />
+            <column caption='Stability' datatype='string' name='[stability]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:discontinued:nk]'>
+            <groupfilter function='member' level='[none:discontinued:nk]' member='false' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;3C Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;ABC Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Above Ground Level&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Aerobees&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Albatross Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Alfa Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Andromeda M31 Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;AquaFlight Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Arsenal Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;AstroDisc&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Axiom&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Ballisdisc&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Bernoulli&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Birdie&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Black Zombie Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Cheengz&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;CHING Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Chumba&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Clash Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Climo Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;ColorYourGame&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Compound Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Crosslap&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Daredevil&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Deuz Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;DGA&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Dino Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Disc 4 Fun&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Disc Golf UK&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Disc King&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Disc Monkey&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Discape Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Discmania&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Discount Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Discraft&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Disctroyer&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Disgo&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Divergent Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Doomsday Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Dynamic Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Element Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Elevation Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Essential Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Eurodisc&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;EV-7&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Evolvent Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Exel Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Finish Line Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Flight Forge Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Flight Lab&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Fly High Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;FlyTec&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Forge Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;FotCot Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Fourth Circle Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Full Turn&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Galaxy Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Gateway&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Goliath Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Good Tree Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Gorilla Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Goto Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Gram Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Grassland Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;GT Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Guru Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;H13 Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Hero Disc&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;HIAARO&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Hobby Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Hooligan Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Hyzer Bomb&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Independent Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Infinite Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Innova&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Ire Gear&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;ITC Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Jester Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Kalaxy Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Kastaplast&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Kestrel Outdoors&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Kraken Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Latitude 64&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Launch Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Legacy Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Lightning Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Lightspeed Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Loft Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Lone Star Disc&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Loop Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Lucky Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Meridian Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Millennium&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Mint Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Momentum Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;MVP&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;National Perk Service&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Native Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Negative Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Neptune Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Nordisc&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Northstar Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Obsidian Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Ocean Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;ODDGRIP&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Orbital Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Osuma Disc&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;OZDG&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Ozone Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Pie Pan Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Plastic Addicts&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Premier Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Prodigy&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Prodiscus&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;ProjBlk&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Qingdao Hippo Sport Products&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Remix Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Reptilian Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Rip Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;RIPR&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Rogue Iron&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;RPM Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Sacred Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Salient&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Sci-Fly Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Shaman Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Skyiron&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Skyquest&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;STM Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Stokely Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Storm Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Streamline&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Supersonic Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Swiftflyte&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Taito Frisbeegolf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Tefat&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Terminal Velocity Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Thought Space Athletics&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Tobu Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Torch Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Tornado Throw&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Trash Panda&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;True Par Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;UB Disc Golf - Hand Candy&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Uplay Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Vibram&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Viking Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Visionary Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Westside&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Wild Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Windward Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Wing It Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Wingman&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;X-UFO&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;XCom&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Yeet Street Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Yikun&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:stability:nk]' />
+              <groupfilter function='member' level='[none:stability:nk]' member='&quot;unknown&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]</column>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]</column>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:discontinued:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='21' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' value='bold' />
+            <format attr='color' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' />
+              <text column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]</rows>
+        <cols>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]</cols>
+      </table>
+      <simple-id uuid='{980B7F6A-5D0E-4B2B-8AFE-D24326F3572E}' />
+    </worksheet>
+    <worksheet name='Sheet 10'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 15 Manufacturers Neutral Discs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='manufacturer_fingerprint_profiles' name='federated.1lndodq1hbwwhy1d0o0g8043giya' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lndodq1hbwwhy1d0o0g8043giya'>
+            <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+            <column caption='Neutral Pct' datatype='real' name='[neutral_pct]' role='measure' type='quantitative' />
+            <column-instance column='[manufacturer]' derivation='None' name='[none:manufacturer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[neutral_pct]' derivation='Sum' name='[sum:neutral_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_molds]' derivation='Sum' name='[sum:total_molds:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Molds' datatype='integer' name='[total_molds]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([total_molds])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:manufacturer:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:neutral_pct:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:neutral_pct:qk]' />
+              <text column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:neutral_pct:qk]' />
+              <lod column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:total_molds:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]</rows>
+        <cols>[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:neutral_pct:qk]</cols>
+      </table>
+      <simple-id uuid='{8FA04420-5D20-4F50-83A3-D471FDE777E5}' />
+    </worksheet>
+    <worksheet name='Sheet 10 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 15 Manufacturers Understable Discs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='manufacturer_fingerprint_profiles' name='federated.1lndodq1hbwwhy1d0o0g8043giya' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lndodq1hbwwhy1d0o0g8043giya'>
+            <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+            <column-instance column='[manufacturer]' derivation='None' name='[none:manufacturer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_molds]' derivation='Sum' name='[sum:total_molds:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[understable_pct]' derivation='Sum' name='[sum:understable_pct:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Molds' datatype='integer' name='[total_molds]' role='measure' type='quantitative' />
+            <column caption='Understable Pct' datatype='real' name='[understable_pct]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([total_molds])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:manufacturer:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:understable_pct:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:understable_pct:qk]' />
+              <text column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:understable_pct:qk]' />
+              <lod column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[:Measure Names]' />
+              <lod column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:total_molds:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]</rows>
+        <cols>[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:understable_pct:qk]</cols>
+      </table>
+      <simple-id uuid='{AD53D0E0-8668-4501-994C-4FB8AD7F403E}' />
+    </worksheet>
+    <worksheet name='Sheet 10 (3)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 15 Manufacturers Understable Discs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='manufacturer_fingerprint_profiles' name='federated.1lndodq1hbwwhy1d0o0g8043giya' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lndodq1hbwwhy1d0o0g8043giya'>
+            <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+            <column-instance column='[manufacturer]' derivation='None' name='[none:manufacturer:nk]' pivot='key' type='nominal' />
+            <column caption='Overstable Pct' datatype='real' name='[overstable_pct]' role='measure' type='quantitative' />
+            <column-instance column='[overstable_pct]' derivation='Sum' name='[sum:overstable_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_molds]' derivation='Sum' name='[sum:total_molds:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Molds' datatype='integer' name='[total_molds]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([total_molds])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:manufacturer:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:overstable_pct:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:overstable_pct:qk]' />
+              <text column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:overstable_pct:qk]' />
+              <lod column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:total_molds:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]</rows>
+        <cols>[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:overstable_pct:qk]</cols>
+      </table>
+      <simple-id uuid='{9AAA1AAB-2098-4AAD-8394-0E484B3EC3E6}' />
+    </worksheet>
+    <worksheet name='Sheet 10 (4)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 15 Manufacturers Putt &amp; Approach Discs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='manufacturer_fingerprint_profiles' name='federated.1lndodq1hbwwhy1d0o0g8043giya' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lndodq1hbwwhy1d0o0g8043giya'>
+            <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+            <column-instance column='[manufacturer]' derivation='None' name='[none:manufacturer:nk]' pivot='key' type='nominal' />
+            <column caption='Putt And Approach Pct' datatype='real' name='[putt and approach_pct]' role='measure' type='quantitative' />
+            <column-instance column='[putt and approach_pct]' derivation='Sum' name='[sum:putt and approach_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_molds]' derivation='Sum' name='[sum:total_molds:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Molds' datatype='integer' name='[total_molds]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([total_molds])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:manufacturer:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:putt and approach_pct:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:putt and approach_pct:qk]' />
+              <text column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:putt and approach_pct:qk]' />
+              <lod column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:total_molds:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]</rows>
+        <cols>[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:putt and approach_pct:qk]</cols>
+      </table>
+      <simple-id uuid='{1E2E0BC6-068B-470F-A447-4078E5324C0D}' />
+    </worksheet>
+    <worksheet name='Sheet 10 (5)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 15 Manufacturers Mid-Range Discs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='manufacturer_fingerprint_profiles' name='federated.1lndodq1hbwwhy1d0o0g8043giya' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lndodq1hbwwhy1d0o0g8043giya'>
+            <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+            <column caption='Mid Range Pct' datatype='real' name='[mid_range_pct]' role='measure' type='quantitative' />
+            <column-instance column='[manufacturer]' derivation='None' name='[none:manufacturer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[mid_range_pct]' derivation='Sum' name='[sum:mid_range_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_molds]' derivation='Sum' name='[sum:total_molds:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Molds' datatype='integer' name='[total_molds]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([total_molds])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:manufacturer:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:mid_range_pct:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:mid_range_pct:qk]' />
+              <text column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:mid_range_pct:qk]' />
+              <lod column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:total_molds:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]</rows>
+        <cols>[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:mid_range_pct:qk]</cols>
+      </table>
+      <simple-id uuid='{5D9EA3FB-BF81-4AEC-A4A7-FDCFDEB8AC72}' />
+    </worksheet>
+    <worksheet name='Sheet 10 (6)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 15 Manufacturers Fairway Driver Discs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='manufacturer_fingerprint_profiles' name='federated.1lndodq1hbwwhy1d0o0g8043giya' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lndodq1hbwwhy1d0o0g8043giya'>
+            <column caption='Fairway Driver Pct' datatype='real' name='[fairway driver_pct]' role='measure' type='quantitative' />
+            <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+            <column-instance column='[manufacturer]' derivation='None' name='[none:manufacturer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[fairway driver_pct]' derivation='Sum' name='[sum:fairway driver_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_molds]' derivation='Sum' name='[sum:total_molds:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Molds' datatype='integer' name='[total_molds]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([total_molds])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:manufacturer:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:fairway driver_pct:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:fairway driver_pct:qk]' />
+              <text column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:fairway driver_pct:qk]' />
+              <lod column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:total_molds:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]</rows>
+        <cols>[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:fairway driver_pct:qk]</cols>
+      </table>
+      <simple-id uuid='{318FF06A-46B7-4C84-AA83-6EE68491B905}' />
+    </worksheet>
+    <worksheet name='Sheet 10 (7)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 15 Manufacturers Distance Driver Discs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='manufacturer_fingerprint_profiles' name='federated.1lndodq1hbwwhy1d0o0g8043giya' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lndodq1hbwwhy1d0o0g8043giya'>
+            <column caption='Distance Driver Pct' datatype='real' name='[distance driver_pct]' role='measure' type='quantitative' />
+            <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+            <column-instance column='[manufacturer]' derivation='None' name='[none:manufacturer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[distance driver_pct]' derivation='Sum' name='[sum:distance driver_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_molds]' derivation='Sum' name='[sum:total_molds:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Molds' datatype='integer' name='[total_molds]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([total_molds])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:manufacturer:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:distance driver_pct:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:distance driver_pct:qk]' />
+              <text column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:distance driver_pct:qk]' />
+              <lod column='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:total_molds:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lndodq1hbwwhy1d0o0g8043giya].[none:manufacturer:nk]</rows>
+        <cols>[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:distance driver_pct:qk]</cols>
+      </table>
+      <simple-id uuid='{26219487-18D3-4450-ABEA-8CA6E8A23122}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Disc Types by Stability</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disc_catalog' name='federated.1wtj8pb0hskram1g1e6m7052jr7w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wtj8pb0hskram1g1e6m7052jr7w'>
+            <column-instance column='[__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' pivot='key' type='quantitative' />
+            <column caption='disc_catalog.csv' datatype='table' name='[__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]' role='measure' type='quantitative' />
+            <column caption='Disc Type' datatype='string' name='[disc_type]' role='dimension' type='nominal' />
+            <column caption='Discontinued' datatype='boolean' name='[discontinued]' role='dimension' type='nominal' />
+            <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+            <column-instance column='[disc_type]' derivation='None' name='[none:disc_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[discontinued]' derivation='None' name='[none:discontinued:nk]' pivot='key' type='nominal' />
+            <column-instance column='[manufacturer]' derivation='None' name='[none:manufacturer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[stability]' derivation='None' name='[none:stability:nk]' pivot='key' type='nominal' />
+            <column caption='Stability' datatype='string' name='[stability]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:disc_type:nk]' />
+              <groupfilter function='member' level='[none:disc_type:nk]' member='&quot;unknown&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:discontinued:nk]'>
+            <groupfilter function='member' level='[none:discontinued:nk]' member='false' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:manufacturer:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;understable&quot;</bucket>
+              <bucket>&quot;overstable&quot;</bucket>
+              <bucket>&quot;neutral&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]</column>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:discontinued:nk]</column>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' value='bold' />
+            <format attr='color' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' value='bold' />
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' value='normal' />
+            <format attr='color' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' value='#000000' />
+            <format attr='color' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' />
+              <text column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk] / [federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk])</rows>
+        <cols>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]</cols>
+      </table>
+      <simple-id uuid='{2B84EFA3-4D3E-46D7-A4AF-FEF8C0FC73B7}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 15 Manufacturers by Disc Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disc_catalog' name='federated.1wtj8pb0hskram1g1e6m7052jr7w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wtj8pb0hskram1g1e6m7052jr7w'>
+            <column-instance column='[__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' pivot='key' type='quantitative' />
+            <column caption='disc_catalog.csv' datatype='table' name='[__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]' role='measure' type='quantitative' />
+            <column caption='Disc Type' datatype='string' name='[disc_type]' role='dimension' type='nominal' />
+            <column caption='Discontinued' datatype='boolean' name='[discontinued]' role='dimension' type='nominal' />
+            <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+            <column-instance column='[disc_type]' derivation='None' name='[none:disc_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[discontinued]' derivation='None' name='[none:discontinued:nk]' pivot='key' type='nominal' />
+            <column-instance column='[manufacturer]' derivation='None' name='[none:manufacturer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[stability]' derivation='None' name='[none:stability:nk]' pivot='key' type='nominal' />
+            <column caption='Stability' datatype='string' name='[stability]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;putt and approach&quot;</bucket>
+              <bucket>&quot;mid_range&quot;</bucket>
+              <bucket>&quot;fairway driver&quot;</bucket>
+              <bucket>&quot;distance driver&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:discontinued:nk]'>
+            <groupfilter function='member' level='[none:discontinued:nk]' member='false' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:manufacturer:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:stability:nk]' />
+              <groupfilter function='member' level='[none:stability:nk]' member='&quot;unknown&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]</column>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:discontinued:nk]</column>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' value='bold' />
+            <format attr='color' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' value='bold' />
+            <format attr='color' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' value='bold' />
+            <format attr='color' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' value='bold' />
+            <format attr='color' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' />
+              <text column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]</rows>
+        <cols>([federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk] * [federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk])</cols>
+      </table>
+      <simple-id uuid='{4732AD11-00A3-45F1-8EA5-530A20E8F607}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 15 Manufacturer Disc Types and Stability Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disc_catalog' name='federated.1wtj8pb0hskram1g1e6m7052jr7w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wtj8pb0hskram1g1e6m7052jr7w'>
+            <column-instance column='[__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' pivot='key' type='quantitative' />
+            <column caption='disc_catalog.csv' datatype='table' name='[__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]' role='measure' type='quantitative' />
+            <column caption='Disc Type' datatype='string' name='[disc_type]' role='dimension' type='nominal' />
+            <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+            <column-instance column='[disc_type]' derivation='None' name='[none:disc_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[manufacturer]' derivation='None' name='[none:manufacturer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[stability]' derivation='None' name='[none:stability:nk]' pivot='key' type='nominal' />
+            <column caption='Stability' datatype='string' name='[stability]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:disc_type:nk]' />
+              <groupfilter function='member' level='[none:disc_type:nk]' member='&quot;unknown&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([stability])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:manufacturer:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' direction='ASC' using='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' />
+          <manual-sort column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;understable&quot;</bucket>
+              <bucket>&quot;neutral&quot;</bucket>
+              <bucket>&quot;overstable&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]</column>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]</rows>
+        <cols>([federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk] / [federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk])</cols>
+      </table>
+      <simple-id uuid='{73F200E1-F135-4DFE-9592-6E7CDED8BDAC}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Percentage of Disc Molds&#10;</run>
+            <run fontsize='10'>Top 15 Manufacturers </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disc_catalog' name='federated.1wtj8pb0hskram1g1e6m7052jr7w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wtj8pb0hskram1g1e6m7052jr7w'>
+            <column-instance column='[disc_type]' derivation='Count' name='[cnt:disc_type:qk]' pivot='key' type='quantitative' />
+            <column caption='Disc Type' datatype='string' name='[disc_type]' role='dimension' type='nominal' />
+            <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+            <column-instance column='[disc_type]' derivation='None' name='[none:disc_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[manufacturer]' derivation='None' name='[none:manufacturer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[disc_type]' derivation='Count' name='[pcto:cnt:disc_type:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <manual-sort column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;putt and approach&quot;</bucket>
+              <bucket>&quot;mid_range&quot;</bucket>
+              <bucket>&quot;fairway driver&quot;</bucket>
+              <bucket>&quot;distance driver&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([disc_type])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;3C Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;ABC Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Above Ground Level&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Aerobees&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Albatross Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Alfa Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Andromeda M31 Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;AquaFlight Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Arsenal Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;AstroDisc&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Axiom&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Ballisdisc&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Bernoulli&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Birdie&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Black Zombie Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Cheengz&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;CHING Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Chumba&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Clash Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Climo Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;ColorYourGame&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Compound Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Crosslap&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Daredevil&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Deuz Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;DGA&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Dino Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Disc 4 Fun&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Disc Golf UK&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Disc King&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Disc Monkey&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Discape Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Discmania&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Discount Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Discraft&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Disctroyer&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Disgo&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Divergent Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Doomsday Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Dynamic Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Element Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Elevation Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Essential Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Eurodisc&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;EV-7&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Evolvent Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Exel Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Finish Line Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Flight Forge Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Flight Lab&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Fly High Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;FlyTec&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Forge Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;FotCot Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Fourth Circle Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Full Turn&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Galaxy Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Gateway&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Goliath Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Good Tree Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Gorilla Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Goto Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Gram Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Grassland Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;GT Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Guru Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;H13 Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Hero Disc&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;HIAARO&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Hobby Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Hooligan Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Hyzer Bomb&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Independent Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Infinite Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Innova&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Ire Gear&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;ITC Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Jester Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Kalaxy Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Kastaplast&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Kestrel Outdoors&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Kraken Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Latitude 64&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Launch Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Legacy Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Lightning Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Lightspeed Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Loft Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Lone Star Disc&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Loop Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Lucky Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Meridian Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Millennium&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Mint Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Momentum Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;MVP&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;National Perk Service&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Native Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Negative Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Neptune Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Nordisc&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Northstar Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Obsidian Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Ocean Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;ODDGRIP&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Orbital Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Osuma Disc&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;OZDG&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Ozone Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Pie Pan Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Plastic Addicts&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Premier Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Prodigy&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Prodiscus&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;ProjBlk&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Qingdao Hippo Sport Products&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Remix Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Reptilian Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Rip Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;RIPR&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Rogue Iron&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;RPM Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Sacred Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Salient&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Sci-Fly Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Shaman Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Skyiron&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Skyquest&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;STM Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Stokely Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Storm Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Streamline&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Supersonic Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Swiftflyte&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Taito Frisbeegolf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Tefat&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Terminal Velocity Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Thought Space Athletics&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Tobu Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Torch Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Tornado Throw&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Trash Panda&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;True Par Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;UB Disc Golf - Hand Candy&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Uplay Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Vibram&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Viking Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Visionary Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Westside&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Wild Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Windward Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Wing It Disc Golf&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Wingman&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;X-UFO&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;XCom&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Yeet Street Discs&quot;' />
+                  <groupfilter function='member' level='[none:manufacturer:nk]' member='&quot;Yikun&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' direction='DESC' using='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[cnt:disc_type:qk]' />
+          <slices>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' value='28' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' value='bold' />
+            <format attr='color' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' />
+              <text column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[pcto:cnt:disc_type:qk:2]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]</rows>
+        <cols>([federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk] * [federated.1wtj8pb0hskram1g1e6m7052jr7w].[cnt:disc_type:qk])</cols>
+      </table>
+      <simple-id uuid='{7C5EA2C6-B7C1-4A8C-91C0-E555A36F42E8}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Putt &amp; Approach Stability Distrubution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disc_catalog' name='federated.1wtj8pb0hskram1g1e6m7052jr7w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wtj8pb0hskram1g1e6m7052jr7w'>
+            <column-instance column='[__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' pivot='key' type='quantitative' />
+            <column caption='disc_catalog.csv' datatype='table' name='[__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]' role='measure' type='quantitative' />
+            <column-instance column='[stability]' derivation='Count' name='[cnt:stability:qk]' pivot='key' type='quantitative' />
+            <column caption='Disc Type' datatype='string' name='[disc_type]' role='dimension' type='nominal' />
+            <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+            <column-instance column='[disc_type]' derivation='None' name='[none:disc_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[manufacturer]' derivation='None' name='[none:manufacturer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[stability]' derivation='None' name='[none:stability:nk]' pivot='key' type='nominal' />
+            <column caption='Stability' datatype='string' name='[stability]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]'>
+            <groupfilter function='member' level='[none:disc_type:nk]' member='&quot;putt and approach&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;putt and approach&quot;</bucket>
+              <bucket>&quot;mid_range&quot;</bucket>
+              <bucket>&quot;fairway driver&quot;</bucket>
+              <bucket>&quot;distance driver&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([disc_type])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:manufacturer:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' direction='ASC' using='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[cnt:stability:qk]' />
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:stability:nk]' />
+              <groupfilter function='member' level='[none:stability:nk]' member='&quot;unknown&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]</column>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]</column>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' value='bold' />
+            <format attr='color' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' value='bold' />
+            <format attr='color' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' />
+              <text column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk] / [federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk])</rows>
+        <cols>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[cnt:stability:qk]</cols>
+      </table>
+      <simple-id uuid='{5938B5C6-02C8-408B-84F4-60570B37D122}' />
+    </worksheet>
+    <worksheet name='Sheet 6 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Mid-Range Stability Distrubution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disc_catalog' name='federated.1wtj8pb0hskram1g1e6m7052jr7w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wtj8pb0hskram1g1e6m7052jr7w'>
+            <column-instance column='[__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' pivot='key' type='quantitative' />
+            <column caption='disc_catalog.csv' datatype='table' name='[__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]' role='measure' type='quantitative' />
+            <column-instance column='[stability]' derivation='Count' name='[cnt:stability:qk]' pivot='key' type='quantitative' />
+            <column caption='Disc Type' datatype='string' name='[disc_type]' role='dimension' type='nominal' />
+            <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+            <column-instance column='[disc_type]' derivation='None' name='[none:disc_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[manufacturer]' derivation='None' name='[none:manufacturer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[stability]' derivation='None' name='[none:stability:nk]' pivot='key' type='nominal' />
+            <column caption='Stability' datatype='string' name='[stability]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]'>
+            <groupfilter function='member' level='[none:disc_type:nk]' member='&quot;mid_range&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;putt and approach&quot;</bucket>
+              <bucket>&quot;mid_range&quot;</bucket>
+              <bucket>&quot;fairway driver&quot;</bucket>
+              <bucket>&quot;distance driver&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([disc_type])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:manufacturer:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' direction='ASC' using='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[cnt:stability:qk]' />
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:stability:nk]' />
+              <groupfilter function='member' level='[none:stability:nk]' member='&quot;unknown&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]</column>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]</column>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' value='bold' />
+            <format attr='color' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' value='bold' />
+            <format attr='color' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' />
+              <text column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk] / [federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk])</rows>
+        <cols>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[cnt:stability:qk]</cols>
+      </table>
+      <simple-id uuid='{2AF595EA-3574-4F45-A584-71A1FB1EA866}' />
+    </worksheet>
+    <worksheet name='Sheet 6 (3)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Fairway Driver Stability Distrubution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disc_catalog' name='federated.1wtj8pb0hskram1g1e6m7052jr7w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wtj8pb0hskram1g1e6m7052jr7w'>
+            <column-instance column='[__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' pivot='key' type='quantitative' />
+            <column caption='disc_catalog.csv' datatype='table' name='[__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]' role='measure' type='quantitative' />
+            <column-instance column='[stability]' derivation='Count' name='[cnt:stability:qk]' pivot='key' type='quantitative' />
+            <column caption='Disc Type' datatype='string' name='[disc_type]' role='dimension' type='nominal' />
+            <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+            <column-instance column='[disc_type]' derivation='None' name='[none:disc_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[manufacturer]' derivation='None' name='[none:manufacturer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[stability]' derivation='None' name='[none:stability:nk]' pivot='key' type='nominal' />
+            <column caption='Stability' datatype='string' name='[stability]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]'>
+            <groupfilter function='member' level='[none:disc_type:nk]' member='&quot;fairway driver&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;putt and approach&quot;</bucket>
+              <bucket>&quot;mid_range&quot;</bucket>
+              <bucket>&quot;fairway driver&quot;</bucket>
+              <bucket>&quot;distance driver&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([disc_type])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:manufacturer:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' direction='ASC' using='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[cnt:stability:qk]' />
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:stability:nk]' />
+              <groupfilter function='member' level='[none:stability:nk]' member='&quot;unknown&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]</column>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]</column>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' value='bold' />
+            <format attr='color' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' value='bold' />
+            <format attr='color' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' />
+              <text column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk] / [federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk])</rows>
+        <cols>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[cnt:stability:qk]</cols>
+      </table>
+      <simple-id uuid='{68DDA4A5-A2DE-4D3B-97B7-FB795B947011}' />
+    </worksheet>
+    <worksheet name='Sheet 6 (4)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Distance Driver Stability Distrubution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disc_catalog' name='federated.1wtj8pb0hskram1g1e6m7052jr7w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wtj8pb0hskram1g1e6m7052jr7w'>
+            <column-instance column='[__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' pivot='key' type='quantitative' />
+            <column caption='disc_catalog.csv' datatype='table' name='[__tableau_internal_object_id__].[disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54]' role='measure' type='quantitative' />
+            <column-instance column='[stability]' derivation='Count' name='[cnt:stability:qk]' pivot='key' type='quantitative' />
+            <column caption='Disc Type' datatype='string' name='[disc_type]' role='dimension' type='nominal' />
+            <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+            <column-instance column='[disc_type]' derivation='None' name='[none:disc_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[manufacturer]' derivation='None' name='[none:manufacturer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[stability]' derivation='None' name='[none:stability:nk]' pivot='key' type='nominal' />
+            <column caption='Stability' datatype='string' name='[stability]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]'>
+            <groupfilter function='member' level='[none:disc_type:nk]' member='&quot;distance driver&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;putt and approach&quot;</bucket>
+              <bucket>&quot;mid_range&quot;</bucket>
+              <bucket>&quot;fairway driver&quot;</bucket>
+              <bucket>&quot;distance driver&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([disc_type])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:manufacturer:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' direction='ASC' using='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[cnt:stability:qk]' />
+          <filter class='categorical' column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:stability:nk]' />
+              <groupfilter function='member' level='[none:stability:nk]' member='&quot;unknown&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]</column>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]</column>
+            <column>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' value='bold' />
+            <format attr='color' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' value='bold' />
+            <format attr='color' field='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' />
+              <text column='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk] / [federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:manufacturer:nk])</rows>
+        <cols>[federated.1wtj8pb0hskram1g1e6m7052jr7w].[cnt:stability:qk]</cols>
+      </table>
+      <simple-id uuid='{325B63F5-7C66-4670-AD57-24AC6B922607}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='1080' maxwidth='1920' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98214' id='7' param='horz' type-v2='layout-flow' w='99064' x='468' y='893'>
+            <zone h='98214' id='5' type-v2='layout-basic' w='89702' x='468' y='893'>
+              <zone h='49107' id='3' name='Sheet 1' w='44851' x='45319' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49107' id='9' name='Sheet 2' w='44851' x='468' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49107' id='10' name='Sheet 3' w='44851' x='468' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49107' id='12' name='Sheet 4' w='44851' x='45319' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98214' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='90170' y='893'>
+              <zone h='9598' id='8' name='Sheet 1' pane-specification-id='0' param='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' type-v2='color' w='9362' x='90170' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11831' id='11' name='Sheet 3' pane-specification-id='0' param='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' type-v2='color' w='9362' x='90170' y='10491'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7255' id='13' name='Sheet 4' pane-specification-id='0' param='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' type-v2='color' w='9362' x='90170' y='22322'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98214' id='18' param='vert' type-v2='layout-flow' w='99064' x='468' y='893'>
+                <zone fixed-size='280' h='49107' id='9' is-fixed='true' name='Sheet 2' w='44851' x='468' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49107' id='3' is-fixed='true' name='Sheet 1' w='44851' x='45319' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9598' id='8' name='Sheet 1' pane-specification-id='0' param='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' type-v2='color' w='9362' x='90170' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49107' id='10' is-fixed='true' name='Sheet 3' w='44851' x='468' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11831' id='11' name='Sheet 3' pane-specification-id='0' param='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' type-v2='color' w='9362' x='90170' y='10491'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49107' id='12' is-fixed='true' name='Sheet 4' w='44851' x='45319' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7255' id='13' name='Sheet 4' pane-specification-id='0' param='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' type-v2='color' w='9362' x='90170' y='22322'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E3811119-4497-4A40-ABB7-83E29FA2662C}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='1080' maxwidth='1920' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98214' id='7' param='horz' type-v2='layout-flow' w='99064' x='468' y='893'>
+            <zone h='98214' id='5' type-v2='layout-basic' w='89702' x='468' y='893'>
+              <zone h='49107' id='3' name='Sheet 6' w='44851' x='468' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49107' id='9' name='Sheet 6 (2)' w='44851' x='45319' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49107' id='10' name='Sheet 6 (3)' w='44851' x='468' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49107' id='11' name='Sheet 6 (4)' w='44851' x='45319' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98214' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='90170' y='893'>
+              <zone h='9598' id='8' name='Sheet 6' pane-specification-id='2' param='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' type-v2='color' w='9362' x='90170' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{17750FD2-5A5E-4C57-BEDD-3E03FF486B65}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E7A1BB7F-EDC4-4391-954C-414323341178}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9815F7D4-CC0F-48D4-8A64-524F74845A0E}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E810008D-8E60-43A9-A756-104438EB09AB}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[__tableau_internal_object_id__].[cnt:disc_catalog.csv_0D58DB9420884EB4B10BB109C693AB54:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{0BE8DB02-59CD-48E9-9D58-A0293F74876A}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{C9CEC025-4321-4BC2-9F2D-A4C4738ACCED}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='147'>
+            <card pane-specification-id='0' param='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:disc_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{EDFC225E-4646-47BA-8AD0-0154344A52D8}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{934E4EAC-8D29-4D9C-878D-F9244CC80393}' />
+    </window>
+    <window class='worksheet' name='Sheet 6 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{79DD61DB-DAD1-42A0-8D0C-A53DECCDD339}' />
+    </window>
+    <window class='worksheet' name='Sheet 6 (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2264804A-EFE0-4C2D-AAD7-76417BCC4AFC}' />
+    </window>
+    <window class='worksheet' name='Sheet 6 (4)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1wtj8pb0hskram1g1e6m7052jr7w].[none:stability:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{ABF2254D-50F3-4249-88A6-751E79CFF001}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Sheet 6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6 (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6 (3)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6 (4)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B7287C48-52D8-481B-A18A-1169B1A62D51}' />
+    </window>
+    <window class='worksheet' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='7' param='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:neutral_pct:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{42C1A466-33F2-4294-8E80-740273837C2C}' />
+    </window>
+    <window class='worksheet' name='Sheet 10 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='9' param='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:understable_pct:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4491C880-41A5-44B5-B18C-1C1E1538001B}' />
+    </window>
+    <window class='worksheet' name='Sheet 10 (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='11' param='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:overstable_pct:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A1EE7B80-3FE0-4D14-884F-7EA0AAFF2C50}' />
+    </window>
+    <window class='worksheet' name='Sheet 10 (4)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='11' param='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:putt and approach_pct:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{07B141CD-DC21-4008-AA2B-F6C96E68FE9F}' />
+    </window>
+    <window class='worksheet' name='Sheet 10 (5)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='11' param='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:mid_range_pct:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D692A983-94AB-4C93-BA6F-1D8F14149608}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 10 (6)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='11' param='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:fairway driver_pct:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9DDF6EDA-C47E-4185-A837-A49420B45EE2}' />
+    </window>
+    <window class='worksheet' name='Sheet 10 (7)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='11' param='[federated.1lndodq1hbwwhy1d0o0g8043giya].[sum:distance driver_pct:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{1672DC84-6D43-43C9-BA74-A92E02D53888}' />
+    </window>
+  </windows>
+</workbook>
